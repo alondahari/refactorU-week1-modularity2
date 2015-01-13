@@ -51,3 +51,32 @@ body{
   padding: 5px 7px;
   font-size: 12px;
 }
+
+/* navigation */
+nav{
+
+}
+
+nav ul{
+  list-style: none;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0;
+  display: inline-block;
+}
+
+nav li{
+  float: left;
+  background-color: #ED828A;
+  padding: 10px 40px;
+
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+nav li:hover{
+  background-color: #ab3636;
+}
