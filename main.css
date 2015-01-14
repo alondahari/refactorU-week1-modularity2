@@ -80,3 +80,32 @@ nav a{
 nav li:hover{
   background-color: #ab3636;
 }
+
+/* pagination */
+.pagination{
+  list-style: none;
+}
+
+.pagination li{
+  display: inline-block;
+  border-bottom: 3px solid #ED828A;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 4px;
+  padding: 4px;
+}
+
+.pagination a{
+  text-decoration: none;
+  color: #ED828A;
+}
+
+.pagination .pagination-current{
+  color: #C8C8C8;
+  border-bottom: 3px solid #C8C8C8;
+}
+
+.pagination li:first-child, .pagination li:last-child{
+  border-bottom: none;
+}
