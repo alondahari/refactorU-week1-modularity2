@@ -109,3 +109,13 @@ nav li:hover{
 .pagination li:first-child, .pagination li:last-child{
   border-bottom: none;
 }
+
+/* comment stream */
+.media-block, .media-block-content{
+  overflow:hidden;
+}
+
+.media-block-image{
+  float: left;
+  margin: 0 10px 10px 0;
+}
