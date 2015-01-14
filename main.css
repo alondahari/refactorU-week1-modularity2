@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+.clear-left{
+  clear: left;
+}
+
 /* center horizon */
 .center-horizon{
   text-align: center;
@@ -48,6 +52,11 @@ a {
   text-decoration: none;
   display: inline-block;
   border: none;
+  padding: 10px 40px;
+}
+
+.button:hover{
+  background-color: #EE626A;
 }
 
 .round-corners{
@@ -64,33 +73,18 @@ a {
   font-size: 22px;
 }
 
-.button-medium{
-  padding: 10px 40px;
-}
+/* medium size is the default */
 
 .button-small{
   padding: 5px 7px;
   font-size: 12px;
 }
 
-/* navigation */
-.navbar li{
-  padding: 10px 40px;
-  background-color: #ED828A;
-}
-
-.navbar a{
-  color: white;
-  text-decoration: none;
-}
-
-.navbar li:hover{
-  background-color: #ab3636;
-}
-
+/* navigation - treat the links as buttons and round the ul's corners */
 .navbar ul{
-  display: inline-block;
   overflow: hidden;
+  /* force ul width same as navbar */
+  display: inline-block;
 }
 
 /* pagination */
@@ -105,17 +99,16 @@ a {
 }
 
 .pagination a{
-  text-decoration: none;
   color: #ED828A;
 }
 
 .pagination .pagination-current{
   color: #C8C8C8;
-  border-bottom: 3px solid #C8C8C8;
+  border-color: #C8C8C8;
 }
 
 .pagination li:first-child, .pagination li:last-child{
-  border-bottom: none;
+  border-color: transparent;
 }
 
 /* comment stream */
@@ -127,34 +120,36 @@ a {
   margin: 0 10px 10px 0;
 }
 
+.dim{
+  color: silver;
+  font-size: 10px;
+}
+
 /* tabs */
+
+.tab-content, .tab-header li{
+  border: 1px solid silver;
+}
 
 .tab-header li{
   margin: 0 5px;
-  padding: 5px 10px;
+  padding: 5px 10px 4px;
   border-radius: 5px 5px 0 0;
-  border: 1px solid #B6B9E4;
   border-bottom: none;
   position: relative;
-  bottom: -1px;
-}
-
-.tab-header li a{
-  color: blue;
+  top: 1px;
   font-weight: bold;
   font-size: 12px;
 }
 
+.tab-header a{
+  color: blue;
+}
+
 .tab-content{
-  padding: 10px 10px;
-  border: 1px solid #B6B9E4;
-  clear: left;
+  padding: 10px;
 }
 
 .tab-header .tab-active{
-  background-color: white;
-}
-
-.clear-left{
-  clear: left;
+  border-bottom: 1px solid white;
 }
