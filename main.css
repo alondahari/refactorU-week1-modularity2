@@ -1,3 +1,5 @@
+/* general */
+
 body{
   font-size: 14px;
 }
@@ -6,9 +8,16 @@ body{
 .center-horizon{
   text-align: center;
 }
+
 .center-horizon>*{
-  margin: 18px;
   display: inline-block;
+}
+
+.children-space>*{
+  margin: 18px;
+}
+
+.children-align-top>*{
   vertical-align: top;
 }
 
@@ -18,23 +27,28 @@ body{
 }
 
 /* horizontal list */
-.horizontal-list{
-  padding: 0;
-  list-style: none;
-}
-.horizontal-list li{
+.float-left, .horizontal-list li{
   float: left;
+}
 
+.no-padding{
+  padding: 0;
 }
 
 /* buttons */
 .button{
   text-decoration: none;
-  background-color: #ED828A;
-  color: white;
-  border-radius: 5px;
   display: inline-block;
   border: none;
+}
+
+.round-corners{
+  border-radius: 5px;
+}
+
+.button-action{
+  color: white;
+  background-color: #ED828A;
 }
 
 .button-large{
@@ -44,7 +58,6 @@ body{
 
 .button-medium{
   padding: 10px 40px;
-
 }
 
 .button-small{
@@ -53,39 +66,26 @@ body{
 }
 
 /* navigation */
-nav{
-
-}
-
-nav ul{
-  list-style: none;
-  border-radius: 5px;
-  overflow: hidden;
-  padding: 0;
-  display: inline-block;
-}
-
-nav li{
-  float: left;
-  background-color: #ED828A;
+.navbar li{
   padding: 10px 40px;
-
+  background-color: #ED828A;
 }
 
-nav a{
-  text-decoration: none;
+.navbar a{
   color: white;
+  text-decoration: none;
 }
 
-nav li:hover{
+.navbar li:hover{
   background-color: #ab3636;
 }
 
-/* pagination */
-.pagination{
-  list-style: none;
+.navbar ul{
+  display: inline-block;
+  overflow: hidden;
 }
 
+/* pagination */
 .pagination li{
   display: inline-block;
   border-bottom: 3px solid #ED828A;
@@ -116,6 +116,14 @@ nav li:hover{
 }
 
 .media-block-image{
-  float: left;
   margin: 0 10px 10px 0;
+}
+
+/* tabs */
+.horizontal-list{
+  list-style: none;
+}
+
+.tab-header li{
+
 }
